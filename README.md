@@ -33,7 +33,9 @@ You can view the database by going to [https://firebase.google.com/](https://fir
 Mail id: `rmelvin1720@gmail.com`
 Password: `Melvin@0421`
 
-Then click the `go to console` on the top, this will display all the projects select `Contact-fullstack` project.
+Then click the `go to console` on the top, this will display all the projects
+
+Select `Contact-fullstack` project.
 
 Select `Firebase Database`, this will display all the back end data stored when you save a contact.
 
