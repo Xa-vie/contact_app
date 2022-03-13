@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import './Style.css';
 import { auth, db, logout } from "../firebase";
 import { query, collection, getDocs, where, addDoc, } from "firebase/firestore";
-
+import validateEmail from "../helper/Vallidation"
 
 function Dashboard() {
     const [user, loading, error] = useAuthState(auth);
@@ -38,6 +38,10 @@ function Dashboard() {
         if (!name) {
             alert("please enter name")
             return false;
+        }
+        if (!validateEmail(email)) {
+            alert("please enter proper email")
+            return false
         }
         if (!email) {
             alert("please enter email")
@@ -92,7 +96,8 @@ function Dashboard() {
                             placeholder="E-mail Address"
                         />
 
-                        <button className="register__btn" onClick={createUser}>
+
+                        <button className="register__btn" onClick={createUser} disabled={!(name && phone && email)}>
                             Save
                         </button>
                         <button className="dashboard__btn" onClick={logout}>
