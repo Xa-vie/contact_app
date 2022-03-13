@@ -39,5 +39,7 @@ Select `Contact-fullstack` project.
 
 Select `Firebase Database`, this will display all the back end data stored when you save a contact.
 
+## You can visit the live site at 
 
+[contact-fullstack.netlify.app](contact-fullstack.netlify.app)
 
