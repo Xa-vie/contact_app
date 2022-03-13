@@ -21,12 +21,12 @@ import {
 } from "firebase/firestore";
 
 const firebaseConfig = {
-    apiKey: "AIzaSyAA_WwVci0Esa7giPAbG9KeQuUSrBsSGhk",
-    authDomain: "contact-b2031.firebaseapp.com",
-    projectId: "contact-b2031",
-    storageBucket: "contact-b2031.appspot.com",
-    messagingSenderId: "246306122320",
-    appId: "1:246306122320:web:ce7e842e7d371d6430ff55"
+    apiKey: "AIzaSyBb8A3nRR3jFdBYsn4Gl_LSSdAnvjFL8Cg",
+    authDomain: "contact-fullstack.firebaseapp.com",
+    projectId: "contact-fullstack",
+    storageBucket: "contact-fullstack.appspot.com",
+    messagingSenderId: "282278447427",
+    appId: "1:282278447427:web:badf1069847e56e062c7f6"
 };
 
 // Initialize Firebase
