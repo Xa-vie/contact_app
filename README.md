@@ -1,10 +1,6 @@
 # Contact App - Full Stack app
 
-We are using **React.js** for front end and **Firebase** store the authentication details and 
-
-## Available Scripts
-
-In the project directory, you can run:
+We are using **React.js** for front end and **Firebase** store the authentication details and contact details
 
 ### Open terminal in vscode and type `npm install`
 
@@ -33,6 +29,7 @@ Each time you login the credentials are checked if present in database then allo
 In Dashboard page you can add a contact, this is stored in the firebase database under `contacts` collection.
 
 You can view the database by going to [https://firebase.google.com/](https://firebase.google.com/) and Sign in using the given credentails 
+
 Mail id: `rmelvin1720@gmail.com`
 Password: `Melvin@0421`
 

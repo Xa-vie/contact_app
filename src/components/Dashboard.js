@@ -34,13 +34,32 @@ function Dashboard() {
         getUsers();
     }, [user, loading]);
 
+    const validateFields = () => {
+        if (!name) {
+            alert("please enter name")
+            return false;
+        }
+        if (!email) {
+            alert("please enter email")
+            return false;
+        }
+        if (!phone) {
+            alert("please enter phone")
+            return false;
+        }
+        return true
+
+    }
 
     const createUser = async () => {
-        const q = query(collection(db, "users"), where("uid", "==", user?.uid));
-        const doc = await getDocs(q);
-        const presentData = doc.docs[0].data();
-        await addDoc(usersCollectionRef, { uid: presentData.uid, name: name, phone: Number(phone), email: email });
-        getUsers();
+        if (validateFields()) {
+            const q = query(collection(db, "users"), where("uid", "==", user?.uid));
+            const doc = await getDocs(q);
+            const presentData = doc.docs[0].data();
+            await addDoc(usersCollectionRef, { uid: presentData.uid, name: name, phone: Number(phone), email: email });
+            getUsers();
+        }
+
     };
     return (
         <div className="dashboard">
@@ -86,7 +105,7 @@ function Dashboard() {
                 <center>
                     <h2>See your contacts</h2>
 
-                    <table class="full width" border='1'>
+                    <table class="full width" >
                         <tr className="default">
                             {
                                 ['Name', 'Phone', 'Email'].map((label) =>

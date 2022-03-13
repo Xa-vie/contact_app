@@ -9,13 +9,17 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #dcdcdc;
+    background-image: linear-gradient(to right, #5cdb95, #91e1a0, #b7e7b1, #d5eec7, #edf5e1);
     padding: 30px;
+    border-radius: 30px;
   }
   .login__textBox {
     padding: 10px;
     font-size: 18px;
     margin-bottom: 10px;
+    border-radius: 25px;
+   border: #05386b 0px solid;
+
   }
   .login__btn {
     padding: 10px;
@@ -23,7 +27,8 @@
     margin-bottom: 10px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: #05386b;
+    border-radius: 20px;
     cursor: pointer;
 
   }
@@ -45,13 +50,16 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #dcdcdc;
+    background-image: linear-gradient(to right, #5cdb95, #91e1a0, #b7e7b1, #d5eec7, #edf5e1);
     padding: 30px;
+    border-radius: 30px;
   }
   .register__textBox {
     padding: 10px;
     font-size: 18px;
     margin-bottom: 10px;
+    border-radius: 25px;
+   border: #05386b 0px solid;
   }
   .register__btn {
     padding: 10px;
@@ -59,7 +67,8 @@
     margin-bottom: 10px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: #05386b;
+    border-radius: 20px;
     cursor: pointer;
   }
   .register__google {
@@ -81,7 +90,7 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #dcdcdc;
+    background-color: whitesmoke;
     padding: 30px;
   }
   .dashboard__btn {
@@ -90,7 +99,8 @@
     margin-top: 10px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: #05386b;
+    border-radius: 20px;
     cursor: pointer;
 
   }
@@ -112,7 +122,8 @@
     display: flex;
     flex-direction: column;
     text-align: center;
-    background-color: #dcdcdc;
+    background-image: linear-gradient(to right, #5cdb95, #91e1a0, #b7e7b1, #d5eec7, #edf5e1);
+border-radius: 30px;
     padding: 30px;
   }
   .reset__textBox {
@@ -126,7 +137,10 @@
     margin-bottom: 10px;
     border: none;
     color: white;
-    background-color: black;
+    background-color: #05386b;
+    border-radius: 20px;
+    cursor: pointer;
+    border: #05386b 0px solid;
   }
   .reset div {
     margin-top: 7px;
@@ -139,4 +153,6 @@
 
   table {
      box-shadow: 5px 10px #888888;
+     background-color: #8ee4af;
+     border-radius: 5px;
   }
