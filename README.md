@@ -25,7 +25,7 @@ Reset - Where he can reset his password
 ### Working
 
 When you login the data is being stored in `users` collection in firebase database.
-Each time you login the credentials are checked if present in database then allow you to loging.
+Each time you login the credentials are checked if present in database then allow you to log in.
 In Dashboard page you can add a contact, this is stored in the firebase database under `contacts` collection.
 
 You can view the database by going to [https://firebase.google.com/](https://firebase.google.com/) and Sign in using the given credentails 
